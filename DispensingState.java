@@ -13,7 +13,9 @@ public class DispensingState implements VendingMachineState
 
     @Override
     public void dispenseItem(VendingMachine vendingMachine, Double balance, String item) {
-        System.out.println(vendingMachine.getItem() + " dispensed!");
+        System.out.print(vendingMachine.getItem() + " dispensed!\n New Balance: ");
+        vendingMachine.setBalance(balance -= 20.0);
+        System.out.println(vendingMachine.getBalance());
         vendingMachine.setVendingMachineState(new IdleState());
     }
 
