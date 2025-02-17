@@ -39,3 +39,4 @@ operations.
 the current state object through its corresponding methods.
 
 UML Diagram:
+![UML](https://github.com/NorielFabella/StatePattern_LabAssign2/blob/main/StatePattern%20LabAssign2%20UML.png)
