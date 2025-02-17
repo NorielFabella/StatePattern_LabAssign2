@@ -11,11 +11,13 @@ public class VendingDemo
         vendingMachine.dispenseItem();
         vendingMachine.setVendingMachineState(new IdleState());
         vendingMachine.dispenseItem();
+        vendingMachine.selectItem("Dog");
         vendingMachine.selectItem("Cat");
         vendingMachine.setOutOfOrder();
         vendingMachine.insertCoin(20.0);
+        vendingMachine.insertCoin(20.0);
+        vendingMachine.insertCoin(20.0);
         vendingMachine.dispenseItem();
         vendingMachine.dispenseItem();
-
     }
 }
