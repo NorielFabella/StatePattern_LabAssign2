@@ -3,8 +3,17 @@ public class IdleState implements VendingMachineState
 
     @Override
     public void selectItem(VendingMachine vendingMachine, String item) {
-        vendingMachine.setVendingMachineState(new ItemSelectedState());
-        System.out.println("Item selected: " + item);
+
+        if(item == "Cat" || item == "Coke" || item =="Candy") // For now, the available items are cat, coke, and candy
+        {
+            vendingMachine.setVendingMachineState(new ItemSelectedState());
+            System.out.println("Item selected: " + item);
+        }
+        else
+        {
+            System.out.println("Item: " + item + " is currently not available...");
+        }
+        
     }
 
     @Override
