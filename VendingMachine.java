@@ -48,8 +48,7 @@ public class VendingMachine
  
     public void insertCoin(Double balance)
     {
-        setBalance(this.balance += balance);
-        vendingMachineState.insertCoin(this, this.balance);
+        vendingMachineState.insertCoin(this, balance);
     }
  
     public void dispenseItem()
