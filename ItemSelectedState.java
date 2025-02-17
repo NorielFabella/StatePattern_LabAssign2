@@ -8,7 +8,18 @@ public class ItemSelectedState implements VendingMachineState
     }
     @Override
     public void insertCoin(VendingMachine vendingMachine, Double balance) {
-        System.out.println("Current balance: " + vendingMachine.getBalance());
+        Double balance2 = 0.0;
+
+        if(balance <= 0)
+        {
+            System.out.println("No coins inserted");
+        }
+        else
+        {
+            balance2 += balance;
+            vendingMachine.setBalance(vendingMachine.getBalance() + balance2);
+            System.out.println("Current balance: " + vendingMachine.getBalance());
+        }
     }
 
     @Override
